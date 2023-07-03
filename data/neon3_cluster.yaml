@@ -1,0 +1,7 @@
+train: /home/tff-bbc/dataset/neon3/cluster_od/cluster_od_1c_v2_3_2/images/train  # train images (relative to 'path') 128 images
+val: /home/tff-bbc/dataset/neon3/cluster_od/cluster_od_1c_v2_3_2/images/valid  # val images (relative to 'path') 128 images
+nc: 1  # number of classes
+names: ['cluster']  # class names
+
+# python train.py --data data/neon3_cluster.yaml --imgsz 1024 --epochs 1000 --rect --project runs/train/neon3_cluster
+# python export.py --data data/neon3_cluster.yaml --weights runs/train/neon3_cluster/exp3/weights/best.pt --imgsz 128 1024 --include onnx
